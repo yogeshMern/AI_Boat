@@ -53,7 +53,7 @@ const Report = () => {
     try {
       setIsSubmitting(true);
       setSuccessMsg("");
-      await Axios.post("https://ai-chat-bot-backend-ug3k.onrender.com/report", reportData);
+      await Axios.post("https://ai-chat-bot-backend-ug3k.onrender.com/api/v1/report", reportData);
       setReportData({ email: "", message: "" });
       // setSuccessMsg("Report sent successfully!");
       toast.success("Report sent successfully!");
