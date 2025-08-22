@@ -190,7 +190,7 @@ const Input = () => {
 
   const sendMessageToAPI = async (messageText, botType) => {
     try {
-      const response = await fetch("http://localhost:8000/api/v1/chat", {
+      const response = await fetch("https://ai-chat-bot-backend-ug3k.onrender.com/chat", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
